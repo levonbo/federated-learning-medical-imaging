@@ -19,6 +19,9 @@ This project was created as part of my bachelor's thesis on Federated Learning (
 ```bash
 git clone https://github.com/levonbo/federated-learning-medical-imaging
 cd federated-learning-medical-imaging
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Usage
