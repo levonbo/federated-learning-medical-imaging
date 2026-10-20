@@ -39,9 +39,22 @@ tensorboard --logdir=tensorboard_runs
 TensorBoard is then available at [http://localhost:6006](http://localhost:6006).
 
 <!-- Insert screenshot here, e.g. validation loss curves -->
-![Loss curves in TensorBoard(Training(green) vs Validation(orange))](docs/Loss_curve.png)
-![Accuracy curves in TensorBoard](docs/acc_curve.png)
-![AUC curves in TensorBoard](docs/auc_curve.png)
+## Training Results
+
+![Loss curves in TensorBoard](docs/Loss_curve.png)
+
+*Training loss (green) and validation loss (orange) over the training rounds.*
+
+<table>
+  <tr>
+    <td><img src="docs/acc_curve.png" alt="Accuracy curves in TensorBoard"></td>
+    <td><img src="docs/auc_curve.png" alt="AUC curves in TensorBoard"></td>
+  </tr>
+  <tr>
+    <td align="center"><em>Validation accuracy</em></td>
+    <td align="center"><em>Validation AUC</em></td>
+  </tr>
+</table>
 
 
 ## Background
