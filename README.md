@@ -17,11 +17,9 @@ This project was created as part of my bachelor's thesis on Federated Learning (
 ## Installation
 
 ```bash
-git clone https://github.com/levonbo/project-federal-learning
-cd project-federated-learning
+git clone https://github.com/levonbo/federated-learning-medical-imaging
+cd federated-learning-medical-imaging
 ```
-The main branch uses an centralized machine learning approach, while the branch "federated-learning-concept" is the main implementation of the federated learning approach. 
-This will be changed in the near future. 
 
 ## Usage
 
@@ -29,19 +27,22 @@ This will be changed in the near future.
 2. Start the simulation:
 
    ```bash
-   python <entry-script>.py
+   python main.py
    ```
 
 ## Monitoring Training with TensorBoard
 
 ```bash
-tensorboard --logdir <log-directory>
+tensorboard --logdir=tensorboard_runs
 ```
 
 TensorBoard is then available at [http://localhost:6006](http://localhost:6006).
 
 <!-- Insert screenshot here, e.g. validation loss curves -->
-![Validation loss in TensorBoard](docs/tensorboard.png)
+![Loss curves in TensorBoard(Training(green) vs Validation(orange))](docs/Loss_curve.png)
+![Accuracy curves in TensorBoard](docs/acc_curve.png)
+![AUC curves in TensorBoard](docs/auc_curve.png)
+
 
 ## Background
 
